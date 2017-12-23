@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>I'm Ridin' Spinners</title>
+    <link href="https://fonts.googleapis.com/css?family=Codystar" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/bulma.css" />
+    <link rel="stylesheet" href="./styles/loaders.css" />
+    <link rel="stylesheet" href="./styles/custom.css" />
+  </head>
+  <body>
+    <nav class="custom-navbar" role="navigation" aria-label="main navigation">
+      <div class="logo"><img src="./img/logo-cropped.gif" /></div>
+      <p class="nav-description">"America's #1 Loading Icon Library"*</p>
+      <button id="instructions" class="button is-dark">How to Use</button>
+      <button class="button is-dark"><a href="ridin_spinners.zip">Download Now</a></button>
+    </nav>
+    <div class="card-container">
+      <div class="card">
+        <div class="card-content">
+          <div class="triangle">
+            <img src="./img/triangle.png">
+          </div>
+        </div>
+        <footer class="card-footer">
+          <p class="card-footer-item">
+            <span>
+              Created by <a href="https://github.com/adamweldonjohnson" target="_blank">adamweldonjohnson</a>
+            </span>
+          </p>
+        </footer>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <div class="card-content">
+          <div class="ball-bounce">
+            <img src="./img/ball.png" id="ball">
+            <img src="./img/ballshadow.png" id="shadow">
+          </div>
+        </div>
+        <footer class="card-footer">
+          <p class="card-footer-item">
+            <span>
+              Created by <a href="https://github.com/MicheleMussatto" target="_blank">MicheleMussatto</a>
+            </span>
+          </p>
+        </footer>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <div class="card-content">
+          <img id="spinner" class="spinner" src="./img/spinner.png" alt="this probably wont work">
+        </div>
+        <footer class="card-footer">
+          <p class="card-footer-item">
+            <span>
+              Created by <a href="https://github.com/2themacks" target="_blank">2themacks</a>
+            </span>
+          </p>
+        </footer>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <div class="card-content">
+          <div class='loader1'><div class='loader2'></div></div>
+        </div>
+        <footer class="card-footer">
+          <p class="card-footer-item">
+            <span>
+              Created by <a href="https://github.com/rthorup" target="_blank">rthorup</a>
+            </span>
+          </p>
+        </footer>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <div class="card-content">
+          <img src="./img/catmouse1.png" class="loader3"/>
+        </div>
+        <footer class="card-footer">
+          <p class="card-footer-item">
+            <span>
+              Created by <a href="https://github.com/rthorup" target="_blank">rthorup</a>
+            </span>
+          </p>
+        </footer>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <div class="card-content">
+          <div class="container">
+            <img src="./img/person.svg" class="person"/><img class="stairs" src="./img/stairs.svg"/>
+          </div>
+        </div>
+        <footer class="card-footer">
+          <p class="card-footer-item">
+            <span>
+              Created by <a href="https://github.com/rthorup" target="_blank">rthorup</a>
+            </span>
+          </p>
+        </footer>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <div class="card-content">
+          <div class="pole"></div>
+        	<div class="background">
+        		<div class="sphere red"></div>
+        		<div class="sphere yellow"></div>
+        		<div class="sphere green"></div>
+        	</div>
+        </div>
+        <footer class="card-footer">
+          <p class="card-footer-item">
+            <span>
+              Created by <a href="https://github.com/toddkc" target="_blank">toddkc</a>
+            </span>
+          </p>
+        </footer>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <div class="card-content">
+          <div class="fire">
+        		<div class="flame flameOne"></div>
+        		<div class="flame flameTwo"></div>
+        	</div>
+        	<div class="logs">
+        		<div class="log logOne"></div>
+        		<div class="log logTwo"></div>
+        	</div>
+        	<div class="rocks">
+        		<div class="rock rockOne"></div>
+        		<div class="rock rockTwo"></div>
+        		<div class="rock rockThree"></div>
+        		<div class="rock rockFour"></div>
+        	</div>
+        </div>
+        <footer class="card-footer">
+          <p class="card-footer-item">
+            <span>
+              Created by <a href="https://github.com/toddkc" target="_blank">toddkc</a>
+            </span>
+          </p>
+        </footer>
+      </div>
+    </div>
+
+    <div class="footnote">*According to Me Mum </div>
+    <div id="instructions-modal" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">How to Use:</p>
+          <button id="instructions-close" class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body">
+          <ol>
+            <li>Download the library</li>
+            <li>Add either ridin_spinners.css or to your project</li>
+            <li>Add whatever images you need from the /img folder to your project</li>
+            <li>Add the relevant markup from ridin_spinners.html to your project</li>
+            <li>???</li>
+            <li>Profit</li>
+          </ol>
+        </section>
+        <footer class="modal-card-foot">
+          <button class="button is-dark"><a href="ridin_spinners.zip">Download Now</a></button>
+        </footer>
+      </div>
+    </div>
+    <script>
+      document.getElementById('instructions').addEventListener('click', function() {document.getElementById('instructions-modal').classList.add('is-active')})
+      document.getElementById('instructions-close').addEventListener('click', function() {document.getElementById('instructions-modal').classList.remove('is-active')})
+    </script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+body {
+  background-image: url('../img/bg.gif');
+  padding-top:10em;
+}
+@media screen and (max-width:450px) {
+  body {
+    background:#000000;
+  }
+}
+nav {
+  text-align:center;
+  padding:0.5em;
+  background:white;
+  border-bottom:solid 5px black;
+  position:fixed;
+  z-index:5;
+  top:0;
+  left:0;
+  width:100%;
+}
+@media screen and (max-width:768px) {
+  nav {
+    position:static;
+  }
+  body {
+    padding-top:0;
+  }
+}
+.nav-description {
+  font-family: 'Codystar', cursive;
+  font-size:1.5em;
+  font-weight:bold;
+}
+nav div, nav p {
+  display:block
+}
+button a, button a:hover {
+  color:#ffffff;
+}
+
+.card {
+  max-width:400px;
+  margin:1em auto;
+}
+.card-content {
+  text-align:center;
+}
+.footnote {
+  background:#ffffff;
+  text-align:right;
+  font-family: 'Codystar', cursive;
+  font-weight:bold;
+}
+.modal-card {
+  background:white;
+}
+.modal-card-body {
+  padding:1em 3em;
+}

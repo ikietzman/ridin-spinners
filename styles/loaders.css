@@ -1,0 +1,358 @@
+*{
+  box-sizing: border-box;
+}
+
+/* MM */
+@keyframes ballBounce {
+  0% { top:25%; height:50%}
+  100% { top:15%; height:55%}
+}
+.ball-bounce {
+  height:185px;
+  position:relative;
+}
+#ball {
+  position:absolute;
+  top:25%;
+  left:0;
+  height:50%;
+  animation: ballBounce .5s linear 0s infinite alternate;
+  left:50%;
+  transform:translateX(-50%);
+  z-index:1;
+}
+@keyframes shadowGrow {
+  0% {width:25%; opacity: 1}
+  100% {width:28%; opacity: 0.5}
+}
+#shadow {
+  position:absolute;
+  top:30%;
+  left:0;
+  width:25%;
+  animation: shadowGrow .5s linear 0s infinite alternate;
+  left:50%;
+  transform:translateX(-50%);
+}
+/* TB */
+.fire {
+  height: 300px;
+  width: 250px;
+  margin: auto;
+  position: relative;
+  top: 40px;
+}
+
+.flameOne {
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+  height: 200px;
+  width: 230px;
+  background-color: red;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 1000px;
+  border-bottom-left-radius: 40%;
+  border-bottom-right-radius: 30%;
+  box-shadow: -5px -20px 20px 20px orange;
+  animation-name: fire1;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  transform: rotate(10deg);
+}
+
+.flameTwo {
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  height: 200px;
+  width: 230px;
+  background-color: red;
+  border-top-left-radius: 1000px;
+  border-top-right-radius: 200px;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  box-shadow: 0 -20px 30px 10px orange;
+  animation-name: fire2;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  transform: rotate(-10deg);
+}
+
+@keyframes fire1 {
+  0% {
+    opacity: 0.2;
+  }
+  25% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+@keyframes fire2 {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  75% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+.logs {
+  position: relative;
+  top: 10px;
+  width: 250px;
+  margin: auto;
+  display: flex;
+}
+
+.log {
+  flex: 1;
+  height: 20px;
+  background-color: saddlebrown;
+  border: 1px solid black;
+}
+
+.logOne {
+  transform: rotate(5deg);
+}
+
+.logTwo {
+  transform: rotate(-5deg);
+}
+
+.rocks {
+  width: 250px;
+  margin: auto;
+  display: flex;
+}
+
+.rock {
+  flex: 1;
+  height: 40px;
+  border-radius: 30%;
+  background-color: gray;
+  border: 5px solid white;
+}
+
+.rockOne {
+  transform: rotate(-2deg);
+}
+
+.rockTwo {
+  transform: rotate(3deg);
+}
+
+.rockThree {
+  transform: rotate(2deg);
+}
+
+.rockFour {
+  transform: rotate(-5deg);
+}
+
+.background {
+  width: 80px;
+  margin: 2em auto;
+  background-color: black;
+  border: 10px solid yellow;
+  text-align: center;
+}
+.sphere {
+  margin: 5px auto;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.red {
+  background-color: red;
+  animation-name: red;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+
+.yellow {
+  background-color: yellow;
+  animation-name: yellow;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+
+.green {
+  background-color: green;
+  animation-name: green;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes green {
+  0% {
+    opacity: 100;
+  }
+  33% {
+    opacity: 100;
+  }
+  34% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes yellow {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  34% {
+    opacity: 100;
+  }
+  65% {
+    opacity: 100;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes red {
+  0% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 100;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+.pole {
+  position: absolute;
+  left: 0;
+  top: 90px;
+  z-index: -1;
+  width: 100%;
+  height: 30px;
+  background-color: gray;
+}
+
+/* RT */
+
+.loader1 {
+border: 16px solid #e5eef9;
+border-top: 16px solid #15181c;
+border-radius: 50%;
+width: 120px;
+height: 120px;
+animation: spin 2s linear infinite;
+margin:0 auto;
+}
+
+.loader2 {
+  border: 12px solid #cddbf2;
+  border-bottom: 12px solid #0d2244;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  animation: spin 5s linear infinite;
+}
+.still {
+  animation: none;
+}
+.loader3 {
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+.container {
+  position: relative;
+  height:200px;
+  width:275px;
+}
+.person {
+  animation: climb 4s linear infinite;
+  position: absolute;
+}
+.stairs {
+  position: absolute;
+  left: 15px;
+  bottom: -10px;
+}
+@keyframes climb {
+  0% {
+    left: 10px;
+    top: 90px;
+  }
+  100% {
+    left: 210px;
+    top: -50px;
+  }
+}
+
+/* MS */
+
+.spinner {
+  -webkit-animation: rotation 2s infinite linear;
+  display: block;
+  margin: 1em auto;
+}
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+/* AJ */
+.triangle {
+  margin-top: 5%;
+  max-width: 400px;
+  animation-name: triangle-spin;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+@keyframes triangle-spin {
+  0% {
+    /*background-color: blue;*/
+    /*transform: rotateX(0deg);*/
+  }
+  50% {
+    /*background-color: red;*/
+    transform: rotate3d(1, -1, 1, 360deg) scale3d(0.001, 0.001, 0.001) rotateX(180deg);
+    /*transform: rotateX(180deg);*/
+    /*transform: rotateY(180deg);*/
+  }
+  100% {
+    /*background-color: blue;*/
+    /*transform: rotateX(0deg);*/
+  }
+}
